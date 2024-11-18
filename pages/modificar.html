@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek - Inventario figuras</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+
+    <header>
+        <nav class="cabecera">
+            <ul class="cabecera__opciones">
+                <li class="cabecera__opcion">
+                    <a class="logo" href="./index.html">
+                        <img class="logo__img" src="../assets/logo.png" alt="Logo de la página">
+                        Inicio
+                    </a>
+                </li>
+                <li class="cabecera__opcion opcion__agregar"><a class="btn__agregar" href="../index.html">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-new">
+        <!-- Seccion para Agregar producto-->
+        <section class="product-new-form">
+            <div class="form-title">
+                <h1>Agregar producto</h1>
+            </div>
+            <form class="form" data-formulario>
+                <label for="nombre" class="form-label">Nombre del producto:</label>
+                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Nombre..." required
+                    data-nombre>
+                <label for="descripcion" class="form-label">Descripción del producto:</label>
+                <textarea class="form-input" id="descripcion" name="descripcion" placeholder="Descripción..." required
+                    data-descripcion></textarea>
+                <label class="form-label" for="precio">Precio del producto:</label>
+                <input class="form-input" type="number" id="precio" name="precio" placeholder="Precio..." required
+                    data-precio>
+                <label class="form-label" for="imagen">URL de Imagen de la figura:</label>
+                <input class="form-input" type="text" id="imagen" name="imagen" placeholder="URL de la imagen..."
+                    required data-imagen>
+                <label class="form-label" for="categoria">Categoría de la figura:</label>
+                <select class="form-input" id="categoria" name="categoria" required data-categoria>
+                    <option value="dc">DC</option>
+                    <option value="marvel">Marvel</option>
+                    <option value="dragon_ball">Dragon Ball</option>
+                    <option value="snk">Attack on Titan</option>
+                </select>
+                <hr>
+                <div class="botones">
+                    <button class="btn__form__agregar" type="submit">Modificar</button>
+                    <button class="btn__form__limpiar" type="button" onclick="limpiar_campos();">Limpiar</button>
+
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <p class="footer__text">🧡🧡🧡 Alura Geek - Inventario figuras 🧡🧡🧡</p>
+            <p class="footer__text">Desarrollado por Santiago Coral.</p>
+            <p class="footer__text">&copy; 2024</p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="../js/controllers/modificar.js" type="module"></script>
+    <script src="../js/controllers/limpiar.js"></script>
+</body>
+
+</html>

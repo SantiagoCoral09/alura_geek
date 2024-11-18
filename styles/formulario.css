@@ -1,0 +1,104 @@
+/* formulario.css */
+
+/* Estilo general para el contenedor del formulario */
+.product-new {
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    /* max-width: 600px; */
+
+}
+
+.product-new-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0);
+
+}
+
+/* Estilo para los encabezados */
+.form-title {
+    text-align: center;
+    color: white;
+    /* height: 50px; */
+    border-radius: 8px 8px 0 0;
+    /* margin: 10; */
+    padding: 10;
+    background-color: #350080;
+}
+
+.form {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Estilo para las etiquetas */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo para los campos de entrada */
+.form-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 2px solid #03318C;
+    border-radius: 20px;
+}
+
+#categoria {
+    width: 200px;
+}
+
+/* Estilo para el botón de envío */
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+.btn__form__agregar {
+    background-color: #03318c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16pt;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #c004d9;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para el botón */
+.btn__form__agregar:hover {
+    background-color: #218838;
+}
+
+.btn__form__limpiar {
+    background-color: white;
+    color: #03318c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16pt;
+    cursor: pointer;
+    border: 2px solid #03318c;
+    box-shadow: 0px 0px 5px 1px #c004d9;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para las validaciones de los campos (opcional) */
+input:invalid,
+textarea:invalid {
+    /* border-color: red; */
+
+}

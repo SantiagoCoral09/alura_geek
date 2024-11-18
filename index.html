@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek - Inventario figuras</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+
+    <header>
+        <nav class="cabecera">
+            <ul class="cabecera__opciones">
+                <li class="cabecera__opcion">
+                    <a class="logo" href="./index.html">
+                        <img class="logo__img" src="./assets/logo.png" alt="Logo de la página">
+                        Inicio
+                    </a>
+                </li>
+                <li class="cabecera__opcion opcion__agregar"><a class="btn__agregar"
+                        href="./pages/agregar-producto.html">Agregar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="search" placeholder="Buscar productos..." class="search-input">
+        <button class="search-button"><img class="search__icon" src="./assets/search.png" alt="" srcset=""></button>
+    </div>
+
+    <div class="category-selector">
+        <label for="categories">Categorías:</label>
+        <select id="categories" class="category-dropdown">
+            <option value="todos">Todos</option>
+            <option value="electronica">Electrónica</option>
+            <option value="ropa">Ropa</option>
+            <option value="hogar">Hogar</option>
+            <option value="juguetes">Juguetes</option>
+        </select>
+    </div>
+
+    <div class="pages">
+        <span class="pageInfo">Página <strong id="currentPage">1</strong> de <strong id="totalPages">10</strong></span>
+        <div class="pagination" data-pagination>
+            <button id="prevPage" class="pagination-button" onclick="navigateToPage(currentPage - 1)">Anterior</button>
+
+            <button id="nextPage" class="pagination-button" onclick="navigateToPage(currentPage + 1)">Siguiente</button>
+        </div>
+    </div>
+
+    <main class="product-container" data-product>
+        <!-- Mostrar producto-->
+
+        <!-- <div class="card">
+            <a href="">
+                <div class="image-container">
+                    <img src="https://m.media-amazon.com/images/I/71y6Hlm1YCL.jpg" alt="Nombre del Producto"
+                        class="card-image">
+                </div>
+                <div class="card-content">
+                    <h4 class="card-title">Nombre del Producto</h4>
+                    <p class="card-description">Descripción breve del producto. Aquí puedes incluir detalles
+                        importantes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates
+                        eligendi quisquam at similique iste, deleniti sunt perspiciatis, nostrum sit voluptatibus sint
+                        quis
+                        rem vero officia obcaecati rerum quam dignissimos.</p>
+                    <p class="card-price">$19.99</p>
+                    <a href="detalles.html" class="card-link">Ver más...</a>
+                </div>
+            </a> 
+        </div>-->
+    </main>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <p class="footer__text">🧡🧡🧡 Alura Geek - Inventario figuras 🧡🧡🧡</p>
+            <p class="footer__text">Desarrollado por Santiago Coral.</p>
+            <p class="footer__text">&copy; 2024</p>
+        </div>
+
+    </footer>
+
+    <script src="./js/controllers/main.js" type="module"></script>
+</body>
+
+</html>

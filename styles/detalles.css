@@ -1,0 +1,61 @@
+.detalles__container {
+    margin: 5px 20px;
+}
+
+.detalles__titulo {
+    text-align: center;
+}
+
+.card-product {
+    background-color: rgb(163, 241, 241);
+    margin: 20px;
+    padding: 40px;
+    transition: transform 0.3s;
+    box-shadow: 0px 0px 5px 1px #c004d9;
+    border-radius: 10px;
+}
+
+.card-title {
+    padding: 10px 0;
+}
+
+.botones {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn__modificar {
+    background-color: #03318c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12pt;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #c004d9;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para el botón */
+.btn__modificar:hover {
+    background-color: #218838;
+}
+
+.btn__eliminar {
+    background-color: rgb(134, 6, 6);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12pt;
+    cursor: pointer;
+    /* border: 2px solid #03318c; */
+    box-shadow: 0px 0px 5px 1px #c004d9;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para el botón */
+.btn__eliminar:hover {
+    background-color: #c004d9;
+}
