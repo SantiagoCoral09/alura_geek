@@ -26,6 +26,10 @@ const deleteProduct = async (BASE_URL, id) => {
     try {
         const response = await fetch(`${BASE_URL}/${id}`, {
             method: "DELETE",
+
+            headers: {
+                "Content-Type": "application/json",
+            },
         });
         const data = await response.json();
         console.log("Eliminado. ", data);
@@ -53,7 +57,7 @@ const createProduct = async (BASE_URL, nombre, descripcion, precio, url_imagen, 
         const data = await response.json();
         console.log(data);
         if (!response.ok) {
-            throw new Error("Ha ocurrido un error al enviar el video...")
+            throw new Error("Ha ocurrido un error al enviar el producto...")
         }
         return data;
 
@@ -67,7 +71,7 @@ const modificarProducto = async (BASE_URL, id, nombre, descripcion, precio, url_
         const response = await fetch(`${BASE_URL}/${id}`, {
             method: "PUT",
             headers: {
-                "Content-Type": "application/json"
+                "content-Type": "application/json"
             },
             body: JSON.stringify({
                 "nombre": nombre,

@@ -25,10 +25,10 @@ function createCard({ id, nombre, descripcion, precio, url_imagen, categoria }) 
                 </div>
                 <div class="card-content">
                     <h4 class="card-title">${id}: ${nombre}</h4><hr>
-                    <p class="">${categoria.toUpperCase()}</p>
+                    <p class="card-categoria">${categoria.toUpperCase()}</p>
                     <p class="card-description">${descripcion}</p><br>
                     <p class="card-price">$${precio}</p>
-                    <a href="../pages/detalles.html?id=${id}" class="card-link">Ver más...</a>
+                    <a href="./pages/detalles.html?id=${id}" class="card-link">Ver más...</a>
                 </div>
             </a>
     `;

@@ -1,7 +1,7 @@
 {
   "productos": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Batman Action Figure",
       "descripcion": "Figura articulada de Batman, tamaño 7 pulgadas, incluye capa y detalles fieles al cómic.",
       "precio": 120000,
@@ -9,7 +9,7 @@
       "categoria": "dc"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Superman Action Figure",
       "descripcion": "Figura de Superman con detalles en el traje, 6 pulgadas, base incluída.",
       "precio": 110000,
@@ -17,7 +17,7 @@
       "categoria": "dc"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Wonder Woman Statue",
       "descripcion": "Estatua de Wonder Woman, 12 pulgadas, base premium.",
       "precio": 250000,
@@ -25,7 +25,7 @@
       "categoria": "dc"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Flash Action Figure",
       "descripcion": "Figura de Flash, con detalles en el traje y velocidad, 7 pulgadas.",
       "precio": 130000,
@@ -33,7 +33,7 @@
       "categoria": "dc"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Aquaman 1/6 Scale Statue",
       "descripcion": "Estatua de Aquaman en escala 1/6, detalles en el tridente y traje.",
       "precio": 450000,
@@ -41,7 +41,7 @@
       "categoria": "dc"
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Joker Action Figure",
       "descripcion": "Figura del Joker con expresión maníaca, 6 pulgadas, incluye armas.",
       "precio": 140000,
@@ -49,7 +49,7 @@
       "categoria": "dc"
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "Green Lantern Action Figure",
       "descripcion": "Figura de Green Lantern, 7 pulgadas, con anillo verde brillante.",
       "precio": 120000,
@@ -57,7 +57,7 @@
       "categoria": "dc"
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "Harley Quinn Figure",
       "descripcion": "Figura articulada de Harley Quinn, con su clásico traje rojo y negro.",
       "precio": 135000,
@@ -65,7 +65,7 @@
       "categoria": "dc"
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "Catwoman Action Figure",
       "descripcion": "Figura de Catwoman, 6 pulgadas, con látigo y detalles en su traje.",
       "precio": 125000,
@@ -73,7 +73,7 @@
       "categoria": "dc"
     },
     {
-      "id": 10,
+      "id": "10",
       "nombre": "Batman v Superman Statue",
       "descripcion": "Estatua premium de Batman vs Superman, 1/6 escala.",
       "precio": 600000,
@@ -81,7 +81,7 @@
       "categoria": "dc"
     },
     {
-      "id": 11,
+      "id": "11",
       "nombre": "Lex Luthor Action Figure",
       "descripcion": "Figura de Lex Luthor con su traje clásico, 7 pulgadas.",
       "precio": 115000,
@@ -89,7 +89,7 @@
       "categoria": "dc"
     },
     {
-      "id": 12,
+      "id": "12",
       "nombre": "Cyborg Action Figure",
       "descripcion": "Figura de Cyborg, 6 pulgadas, con detalles tecnológicos.",
       "precio": 140000,
@@ -97,7 +97,7 @@
       "categoria": "dc"
     },
     {
-      "id": 13,
+      "id": "13",
       "nombre": "Green Arrow Action Figure",
       "descripcion": "Figura articulada de Green Arrow, con arco y flechas, 7 pulgadas.",
       "precio": 125000,
@@ -105,7 +105,7 @@
       "categoria": "dc"
     },
     {
-      "id": 14,
+      "id": "14",
       "nombre": "Batgirl Action Figure",
       "descripcion": "Figura de Batgirl con capa y detalles del traje, 6 pulgadas.",
       "precio": 130000,
@@ -113,7 +113,7 @@
       "categoria": "dc"
     },
     {
-      "id": 15,
+      "id": "15",
       "nombre": "Nightwing Action Figure",
       "descripcion": "Figura de Nightwing, 7 pulgadas, con bastón y detalles en su traje.",
       "precio": 130000,
@@ -121,7 +121,7 @@
       "categoria": "dc"
     },
     {
-      "id": 16,
+      "id": "16",
       "nombre": "Shazam! Action Figure",
       "descripcion": "Figura de Shazam! con capa y detalles del traje, 7 pulgadas.",
       "precio": 120000,
@@ -129,7 +129,7 @@
       "categoria": "dc"
     },
     {
-      "id": 17,
+      "id": "17",
       "nombre": "Suicide Squad Harley Quinn Statue",
       "descripcion": "Estatua de Harley Quinn en versión Suicide Squad, 12 pulgadas.",
       "precio": 220000,
@@ -137,7 +137,7 @@
       "categoria": "dc"
     },
     {
-      "id": 18,
+      "id": "18",
       "nombre": "The Flash Speed Force Statue",
       "descripcion": "Estatua de The Flash en acción, 10 pulgadas, base detallada.",
       "precio": 300000,
@@ -145,7 +145,7 @@
       "categoria": "dc"
     },
     {
-      "id": 19,
+      "id": "19",
       "nombre": "Supergirl Action Figure",
       "descripcion": "Figura de Supergirl, 6 pulgadas, con capa y detalles en el traje.",
       "precio": 120000,
@@ -153,7 +153,7 @@
       "categoria": "dc"
     },
     {
-      "id": 20,
+      "id": "20",
       "nombre": "Batman's Batcave Statue",
       "descripcion": "Estatua de Batman con la Batcave en escala 1/12, detalles excepcionales.",
       "precio": 500000,
@@ -161,7 +161,7 @@
       "categoria": "dc"
     },
     {
-      "id": 21,
+      "id": "21",
       "nombre": "Iron Man Mark 85 Figure",
       "descripcion": "Figura de Iron Man Mark 85, 6 pulgadas, con detalles en su traje y luces LED.",
       "precio": 150000,
@@ -169,7 +169,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 22,
+      "id": "22",
       "nombre": "Spider-Man 2099 Action Figure",
       "descripcion": "Figura de Spider-Man 2099, 7 pulgadas, con detalles en su traje y postura dinámica.",
       "precio": 120000,
@@ -177,7 +177,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 23,
+      "id": "23",
       "nombre": "Captain America Shield Replica",
       "descripcion": "Réplica de escudo de Captain America, tamaño completo, detalles de alta calidad.",
       "precio": 320000,
@@ -185,7 +185,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 24,
+      "id": "24",
       "nombre": "Thor Hammer Mjolnir",
       "descripcion": "Martillo Mjolnir de Thor, réplica tamaño real, detalles de alta calidad.",
       "precio": 400000,
@@ -193,7 +193,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 25,
+      "id": "25",
       "nombre": "Black Panther Action Figure",
       "descripcion": "Figura articulada de Black Panther, 7 pulgadas, detalles en el traje vibranium.",
       "precio": 140000,
@@ -201,7 +201,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 26,
+      "id": "26",
       "nombre": "Deadpool Action Figure",
       "descripcion": "Figura de Deadpool con detalles en su traje y espadas, 7 pulgadas.",
       "precio": 130000,
@@ -209,7 +209,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 27,
+      "id": "27",
       "nombre": "Doctor Strange Figure",
       "descripcion": "Figura de Doctor Strange con capa, hechizos y detalles en su traje místico.",
       "precio": 135000,
@@ -217,7 +217,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 28,
+      "id": "28",
       "nombre": "Hulk Action Figure",
       "descripcion": "Figura de Hulk, 8 pulgadas, con detalles musculares y postura en acción.",
       "precio": 145000,
@@ -225,7 +225,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 29,
+      "id": "29",
       "nombre": "Black Widow Action Figure",
       "descripcion": "Figura articulada de Black Widow, 6 pulgadas, con armas y detalles en su traje.",
       "precio": 120000,
@@ -233,7 +233,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 30,
+      "id": "30",
       "nombre": "Ant-Man Action Figure",
       "descripcion": "Figura de Ant-Man, 7 pulgadas, con detalles de su traje y accesorios.",
       "precio": 125000,
@@ -241,7 +241,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 31,
+      "id": "31",
       "nombre": "Wolverine Action Figure",
       "descripcion": "Figura de Wolverine, 6 pulgadas, con garras y detalles en su traje de X-Men.",
       "precio": 130000,
@@ -249,7 +249,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 32,
+      "id": "32",
       "nombre": "Star-Lord Figure",
       "descripcion": "Figura de Star-Lord, 7 pulgadas, con accesorios y detalles en su traje espacial.",
       "precio": 120000,
@@ -257,7 +257,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 33,
+      "id": "33",
       "nombre": "Gamora Action Figure",
       "descripcion": "Figura de Gamora, 6 pulgadas, con detalles en su traje y espada.",
       "precio": 125000,
@@ -265,7 +265,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 34,
+      "id": "34",
       "nombre": "Vision Action Figure",
       "descripcion": "Figura de Vision, 7 pulgadas, con detalles de su traje y gema de la mente.",
       "precio": 130000,
@@ -273,7 +273,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 35,
+      "id": "35",
       "nombre": "Falcon Action Figure",
       "descripcion": "Figura de Falcon, 7 pulgadas, con alas desplegables y detalles en su traje.",
       "precio": 135000,
@@ -281,7 +281,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 36,
+      "id": "36",
       "nombre": "Rocket Raccoon Figure",
       "descripcion": "Figura de Rocket Raccoon con accesorios, 5 pulgadas.",
       "precio": 120000,
@@ -289,7 +289,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 37,
+      "id": "37",
       "nombre": "Nick Fury Action Figure",
       "descripcion": "Figura de Nick Fury, 6 pulgadas, con detalles en su traje y lentes.",
       "precio": 125000,
@@ -297,7 +297,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 38,
+      "id": "38",
       "nombre": "Professor X Action Figure",
       "descripcion": "Figura de Profesor X con silla flotante, 6 pulgadas.",
       "precio": 130000,
@@ -305,7 +305,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 39,
+      "id": "39",
       "nombre": "Punisher Action Figure",
       "descripcion": "Figura de Punisher con pistolas y detalles en su chaleco, 7 pulgadas.",
       "precio": 140000,
@@ -313,7 +313,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 40,
+      "id": "40",
       "nombre": "Silver Surfer Action Figure",
       "descripcion": "Figura del Silver Surfer con detalles en su traje y surfboard, 7 pulgadas.",
       "precio": 145000,
@@ -321,7 +321,7 @@
       "categoria": "marvel"
     },
     {
-      "id": 41,
+      "id": "41",
       "nombre": "Goku S.H. Figuarts Dragon Ball Z",
       "descripcion": "Figura de Goku de Dragon Ball Z, articulada con detalles en su traje y cabello, incluye varias expresiones faciales.",
       "precio": 160000,
@@ -329,7 +329,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 42,
+      "id": "42",
       "nombre": "Vegeta Super Saiyan God Action Figure",
       "descripcion": "Figura de Vegeta en su forma Super Saiyan God, con detalles en su traje y cabello, 7 pulgadas.",
       "precio": 155000,
@@ -337,7 +337,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 43,
+      "id": "43",
       "nombre": "Piccolo Dragon Ball Z",
       "descripcion": "Figura articulada de Piccolo de Dragon Ball Z, incluye brazo extendido y detalles de su gi.",
       "precio": 135000,
@@ -345,7 +345,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 44,
+      "id": "44",
       "nombre": "Frieza Golden Figure",
       "descripcion": "Figura de Frieza en su forma Golden, con detalles en su traje y en su poder, 7 pulgadas.",
       "precio": 140000,
@@ -353,7 +353,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 45,
+      "id": "45",
       "nombre": "Majin Buu Fat Action Figure",
       "descripcion": "Figura de Majin Buu en su forma más dócil, con detalles en su figura y vestimenta.",
       "precio": 145000,
@@ -361,7 +361,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 46,
+      "id": "46",
       "nombre": "Gohan Teen S.H. Figuarts",
       "descripcion": "Figura de Gohan en su versión adolescente de Dragon Ball Z, incluye varias manos y rostros intercambiables.",
       "precio": 140000,
@@ -369,7 +369,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 47,
+      "id": "47",
       "nombre": "Trunks Super Saiyan Figure",
       "descripcion": "Figura de Trunks en su forma Super Saiyan de Dragon Ball Z, con espada y detalles de su vestimenta.",
       "precio": 130000,
@@ -377,7 +377,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 48,
+      "id": "48",
       "nombre": "Goku Black Super Saiyan Rose",
       "descripcion": "Figura de Goku Black en su forma Super Saiyan Rose de Dragon Ball Super, con detalles en su cabello y ropa.",
       "precio": 160000,
@@ -385,7 +385,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 49,
+      "id": "49",
       "nombre": "Broly Dragon Ball Super",
       "descripcion": "Figura de Broly en su versión de Dragon Ball Super, con detalles musculares y expresión furiosa.",
       "precio": 175000,
@@ -393,7 +393,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 50,
+      "id": "50",
       "nombre": "Vegeta S.H. Figuarts Dragon Ball Z",
       "descripcion": "Figura de Vegeta de Dragon Ball Z, articulada, con detalles en su traje Saiyan.",
       "precio": 145000,
@@ -401,7 +401,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 51,
+      "id": "51",
       "nombre": "Goku Super Saiyan 4 GT Figure",
       "descripcion": "Figura de Goku Super Saiyan 4 de Dragon Ball GT, con detalles en su traje rojo y cola de mono.",
       "precio": 170000,
@@ -409,7 +409,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 52,
+      "id": "52",
       "nombre": "Vegeta Dragon Ball Z",
       "descripcion": "Figura de Vegeta con armadura Saiyan, 6 pulgadas, con detalles de su vestimenta y expresión seria.",
       "precio": 130000,
@@ -417,7 +417,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 53,
+      "id": "53",
       "nombre": "Goku Ultra Instinct",
       "descripcion": "Figura de Goku Ultra Instinct, con detalles en su cabello plateado y aura intensa.",
       "precio": 190000,
@@ -425,7 +425,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 54,
+      "id": "54",
       "nombre": "Jiren Dragon Ball Super",
       "descripcion": "Figura de Jiren de Dragon Ball Super, con detalles musculares y expresión seria.",
       "precio": 170000,
@@ -433,7 +433,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 55,
+      "id": "55",
       "nombre": "Frieza S.H. Figuarts Dragon Ball Z",
       "descripcion": "Figura de Frieza en su forma final de Dragon Ball Z, con detalles en su traje y cabeza.",
       "precio": 140000,
@@ -441,7 +441,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 56,
+      "id": "56",
       "nombre": "Cell S.H. Figuarts Dragon Ball Z",
       "descripcion": "Figura articulada de Cell, con detalles en su piel y postura de combate.",
       "precio": 160000,
@@ -449,7 +449,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 57,
+      "id": "57",
       "nombre": "Tien Shinhan Dragon Ball Z",
       "descripcion": "Figura de Tien Shinhan, con detalles en su vestimenta y estilo de combate.",
       "precio": 125000,
@@ -457,7 +457,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 58,
+      "id": "58",
       "nombre": "Shenron Dragon Ball Z",
       "descripcion": "Figura de Shenron, el dragón de las esferas del dragón, con detalles de su cuerpo largo y escamas.",
       "precio": 200000,
@@ -465,7 +465,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 59,
+      "id": "59",
       "nombre": "Android 17 Dragon Ball Z",
       "descripcion": "Figura de Android 17 con detalles en su vestimenta y actitud seria.",
       "precio": 130000,
@@ -473,7 +473,7 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 60,
+      "id": "60",
       "nombre": "Goku Black S.H. Figuarts",
       "descripcion": "Figura de Goku Black en su forma de Dragon Ball Super, con detalles en su cabello y gi, incluye varios accesorios.",
       "precio": 165000,
@@ -481,164 +481,164 @@
       "categoria": "dragon_ball"
     },
     {
-      "id": 61,
+      "id": "61",
       "nombre": "Eren Yeager - S.H. Figuarts",
       "descripcion": "Figura articulada de Eren Yeager con detalles en su uniforme de explorador, incluye varios accesorios y piezas intercambiables.",
       "precio": 120000,
       "url_imagen": "https://m.media-amazon.com/images/I/91yEGuqupML._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 62,
+      "id": "62",
       "nombre": "Levi Ackerman - Nendoroid",
       "descripcion": "Figura Nendoroid de Levi Ackerman con su expresión característica y varios accesorios de combate.",
       "precio": 110000,
       "url_imagen": "https://m.media-amazon.com/images/I/71KTos18zHL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 63,
+      "id": "63",
       "nombre": "Mikasa Ackerman - Figma",
       "descripcion": "Figura articulada de Mikasa Ackerman con su equipo de maniobras tridimensionales, con múltiples accesorios y detalles.",
       "precio": 130000,
       "url_imagen": "https://m.media-amazon.com/images/I/51XNzFd3zJL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 64,
+      "id": "64",
       "nombre": "Historia Reiss - Figure",
       "descripcion": "Figura de Historia Reiss, la reina de las murallas, con detalles de su vestimenta y cabello, pieza de colección.",
       "precio": 125000,
       "url_imagen": "https://m.media-amazon.com/images/I/51H9FJ14gDL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 65,
+      "id": "65",
       "nombre": "Armin Arlert - Figma",
       "descripcion": "Figura de Armin Arlert con su uniforme de explorador y el equipo de maniobras tridimensionales, articulado y con accesorios.",
       "precio": 120000,
       "url_imagen": "https://m.media-amazon.com/images/I/61e5-bOdLxL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 66,
+      "id": "66",
       "nombre": "Titan Colosal - Figura de colección",
       "descripcion": "Figura gigante del Titán Colosal, con detalles impresionantes y articulaciones para simular la transformación.",
       "precio": 180000,
       "url_imagen": "https://m.media-amazon.com/images/I/91oK4m5Xt7L._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 67,
+      "id": "67",
       "nombre": "Eren Titan - Figure",
       "descripcion": "Figura de Eren Yeager en su forma de titán, con detalles de los músculos y la transformación.",
       "precio": 160000,
       "url_imagen": "https://m.media-amazon.com/images/I/91ALoMmh5lL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 68,
+      "id": "68",
       "nombre": "Levi Ackerman - Action Figure",
       "descripcion": "Figura de acción de Levi Ackerman con su espada, base y detallado uniforme de la Legión de Exploradores.",
       "precio": 140000,
       "url_imagen": "https://m.media-amazon.com/images/I/71D4NoThpxL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 69,
+      "id": "69",
       "nombre": "Mikasa Ackerman - Nendoroid",
       "descripcion": "Nendoroid de Mikasa Ackerman con varias expresiones y piezas intercambiables.",
       "precio": 115000,
       "url_imagen": "https://m.media-amazon.com/images/I/71Eo5vdZKUL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 70,
+      "id": "70",
       "nombre": "Erwin Smith - Figma",
       "descripcion": "Figura de Erwin Smith, comandante de la Legión de Exploradores, con sus accesorios y detalles de su uniforme.",
       "precio": 130000,
       "url_imagen": "https://m.media-amazon.com/images/I/91Ta1K8P-ML._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 71,
+      "id": "71",
       "nombre": "Sasha Blouse - Figma",
       "descripcion": "Figura de Sasha Blouse con su uniforme de explorador y equipo de maniobras tridimensionales.",
       "precio": 110000,
       "url_imagen": "https://m.media-amazon.com/images/I/81wV5Jfc8+L._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 72,
+      "id": "72",
       "nombre": "Jean Kirstein - Figma",
       "descripcion": "Figura de Jean Kirstein, compañero de Eren, con su equipo de maniobras tridimensionales y articulación.",
       "precio": 125000,
       "url_imagen": "https://m.media-amazon.com/images/I/71QOdc+o7OL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 73,
+      "id": "73",
       "nombre": "Reiner Braun - S.H. Figuarts",
       "descripcion": "Figura articulada de Reiner Braun como el Titán Acorazado, con detalles en su armadura y expresiones intercambiables.",
       "precio": 150000,
       "url_imagen": "https://m.media-amazon.com/images/I/61hNVF5vTBL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 74,
+      "id": "74",
       "nombre": "Annie Leonhart - Figure",
       "descripcion": "Figura de Annie Leonhart con su vestimenta de soldado y detalles de su transformación en titán.",
       "precio": 140000,
       "url_imagen": "https://m.media-amazon.com/images/I/81XBnH+M9qL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 75,
+      "id": "75",
       "nombre": "Kenny Ackerman - Figure",
       "descripcion": "Figura de Kenny Ackerman, el asesino y líder de los bandidos, con su uniforme y expresión feroz.",
       "precio": 130000,
       "url_imagen": "https://m.media-amazon.com/images/I/71t7slv3j7L._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 76,
+      "id": "76",
       "nombre": "Zeke Yeager - Figure",
       "descripcion": "Figura de Zeke Yeager, el Titán Bestia, con detalles de su poder y ropa característica.",
       "precio": 145000,
       "url_imagen": "https://m.media-amazon.com/images/I/61-Jk7SoPPL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 77,
+      "id": "77",
       "nombre": "Pieper - Action Figure",
       "descripcion": "Figura de Pieper con su uniforme del ejército, el equipo de maniobras tridimensionales y varios accesorios.",
       "precio": 120000,
       "url_imagen": "https://m.media-amazon.com/images/I/61x8M2SBzAL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 78,
+      "id": "78",
       "nombre": "Bertolt Hoover - S.H. Figuarts",
       "descripcion": "Figura de Bertolt Hoover con la armadura de su Titán Colosal y expresión intercambiable.",
       "precio": 135000,
       "url_imagen": "https://m.media-amazon.com/images/I/71fN9LOhMLL._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 79,
+      "id": "79",
       "nombre": "Titán hembra - Figura",
       "descripcion": "Figura de la Titán Hembra con detalles en su piel y estructura, muy detallada.",
       "precio": 160000,
       "url_imagen": "https://m.media-amazon.com/images/I/91Y2u7eFh5L._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     },
     {
-      "id": 80,
+      "id": "80",
       "nombre": "Titán Acorazado - Figura",
       "descripcion": "Figura de acción del Titán Acorazado, detalle en el diseño de su armadura.",
       "precio": 155000,
       "url_imagen": "https://m.media-amazon.com/images/I/81LMFGhDt8L._AC_SY679_.jpg",
-      "categoria": "snk"
+      "categoria": "Otros"
     }
   ]
 }
