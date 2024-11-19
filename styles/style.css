@@ -206,7 +206,7 @@ body {
     object-fit: contain;
     transition: transform 0.5s ease-in-out;
 
-    filter: brightness(1.1);
+/*     filter: brightness(1.1); */
     mix-blend-mode: multiply;
     animation: slideInTop 0.5s ease-in-out;
 }
