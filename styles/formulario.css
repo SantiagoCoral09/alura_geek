@@ -3,17 +3,12 @@
 /* Estilo general para el contenedor del formulario */
 .product-new {
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
-    /* max-width: 600px; */
-
 }
 
 .product-new-form {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    /* padding: 20px; */
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -25,9 +20,7 @@
 .form-title {
     text-align: center;
     color: white;
-    /* height: 50px; */
     border-radius: 8px 8px 0 0;
-    /* margin: 10; */
     padding: 10;
     background-color: #350080;
 }
@@ -94,11 +87,4 @@
     border: 2px solid #03318c;
     box-shadow: 0px 0px 5px 1px #c004d9;
     transition: background-color 0.3s;
-}
-
-/* Estilo para las validaciones de los campos (opcional) */
-input:invalid,
-textarea:invalid {
-    /* border-color: red; */
-
 }

@@ -4,9 +4,6 @@ const BASE_URL = "https://673525585995834c8a920433.mockapi.io/api/productos/prod
 // URL desde localhost
 // const BASE_URL="http://localhost:3001/productos";
 
-// const form = document.querySelector("[data-formulario]");
-
-
 let currentPage = 1;
 let pageSize = 10;
 
@@ -18,7 +15,7 @@ function createCard({ id, nombre, descripcion, precio, url_imagen, categoria }) 
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-    <a href="../pages/detalles.html?id=${id}">
+    <a href="./pages/detalles.html?id=${id}">
                 <div class="image-container">
                     <img src="${url_imagen}" alt="${id}: ${nombre}"
                         class="card-image">
@@ -53,21 +50,28 @@ const renderProducts = async (page, pageSize) => {
     }
 }
 
-const setupPagination = (totalPages, currentPage) => {
+const setupPagination = (totalPages, currentPage, buscando = {}) => {
     paginationContainer.innerHTML = '';
-    document.getElementById('currentPage').innerHTML = currentPage;
-    document.getElementById('totalPages').innerHTML = totalPages;
+    document.getElementById('pageInfo').innerHTML = `Página ${currentPage} de ${totalPages}`;
 
     const start = Math.max(1, currentPage - 2);
     const end = Math.min(totalPages, currentPage + 2);
     if (currentPage > 1) {
         const prevButton = document.createElement('button');
-        prevButton.innerText = 'Ant';
+        prevButton.innerText = '<';
         prevButton.classList.add('pagination-button');
         prevButton.onclick = () => {
             currentPage--;
-            renderProducts(currentPage, pageSize);
-            setupPagination(totalPages, currentPage);
+            if (buscando.buscando) {
+                console.log(buscando);
+                renderProductosBuscados(currentPage, pageSize, buscando.parametro, buscando.valorBuscar);
+                setupPagination(totalPages, currentPage, buscando);
+
+            } else {
+                renderProducts(currentPage, pageSize);
+                setupPagination(totalPages, currentPage);
+
+            }
         };
         paginationContainer.appendChild(prevButton);
     }
@@ -84,74 +88,159 @@ const setupPagination = (totalPages, currentPage) => {
         }
         button.onclick = () => {
             currentPage = i;
-            renderProducts(currentPage, pageSize);
-            setupPagination(totalPages, currentPage);
+            if (buscando.buscando) {
+                console.log(buscando);
+                renderProductosBuscados(currentPage, pageSize, buscando.parametro, buscando.valorBuscar);
+                setupPagination(totalPages, currentPage, buscando);
+
+            } else {
+                renderProducts(currentPage, pageSize);
+                setupPagination(totalPages, currentPage);
+
+            }
         };
         paginationContainer.appendChild(button);
     }
 
     if (currentPage < totalPages) {
         const nextButton = document.createElement('button');
-        nextButton.innerText = 'Sig';
+        nextButton.innerText = '>';
         nextButton.classList.add('pagination-button');
         nextButton.onclick = () => {
             currentPage++;
-            renderProducts(currentPage, pageSize);
-            setupPagination(totalPages, currentPage);
+            if (buscando.buscando) {
+                console.log(buscando);
+                renderProductosBuscados(currentPage, pageSize, buscando.parametro, buscando.valorBuscar);
+                setupPagination(totalPages, currentPage, buscando);
+
+            } else {
+                renderProducts(currentPage, pageSize);
+                setupPagination(totalPages, currentPage);
+
+            }
         };
         paginationContainer.appendChild(nextButton);
     }
 }
 
-// async function crearProducto(event) {
-//     event.preventDefault();
-
-//     const nombre = document.querySelector("[data-nombre]").value;
-//     const descripcion = document.querySelector("[data-descripcion]").value;
-//     const precio = document.querySelector("[data-precio]").value;
-//     const url_imagen = document.querySelector("[data-imagen]").value;
-//     const categoria = document.querySelector("[data-categoria]").value;
-
-//     console.log(nombre, descripcion, precio, url_imagen, categoria);
-//     try {
-//         const resultado = await servicesProducts.createProduct(BASE_URL, nombre, descripcion, precio, url_imagen, categoria);
-//         console.log(resultado);
-//         alert(resultado.id);
-//         window.location.href = `../pages/detalles.html?id=${resultado.id}`;
-//     } catch (error) {
-//         console.error("Hubo un error: ", error);
-//         alert("Error");
-//     }
-
-
-// }
-// // Al hacer clic en el boton del formulario
-// if (form) {
-//     form.addEventListener("submit", (event) => {
-//         crearProducto(event);
-//     });
-// }
-
-
 const init = async () => {
 
     try {
-        const totalProducts = await fetch(BASE_URL);
-        const data = await totalProducts.json();
-        const totalCount = data.length
-        console.log(totalCount);
-        const totalPages = Math.ceil(totalCount / pageSize);
+        const response = await fetch(BASE_URL);
+        const data = await response.json();
+        if (response.ok) {
+            console.log(response);
+            const totalCount = data.length
+            console.log(totalCount);
+            const totalPages = Math.ceil(totalCount / pageSize);
 
-        await renderProducts(currentPage, pageSize);
-        setupPagination(totalPages, currentPage);
+            await renderProducts(currentPage, pageSize);
+            setupPagination(totalPages, currentPage);
+        } else {
+            productContainer.innerHTML = "<h2 class='mensaje-fallo'>Hubo un error al mostrar los productos.</h2>";
+        }
+
     }
     catch (error) {
         console.error("Hubo un error: ", error);
-        // productContainer.innerHTML = "<h2 class='mensaje-fallo'>Hubo un error al mostrar los productos.</h2>";
     }
 }
+
 if (productContainer) {
     init();
 }
+
+
+const categoria = document.querySelector("[data-categoria]");
+if (categoria)
+    categoria.addEventListener("change", event => {
+        const parametroConsulta = "categoria";
+        const valorBuscar = categoria.value;
+
+        buscarProductos(parametroConsulta, valorBuscar);
+    });
+
+const botonBusqueda = document.querySelector("[data-boton-busqueda]");
+if (botonBusqueda)
+    botonBusqueda.addEventListener("click", evento => {
+        // se va a buscar por nombre en la API
+        const parametroConsulta = "nombre";
+        const valorBuscar = document.querySelector("[data-busqueda]").value;
+
+        buscarProductos(parametroConsulta, valorBuscar);
+    });
+
+// Buscar un producto al presionar la tecla enter
+const inputEle = document.getElementById('buscar');
+if (inputEle) {
+    inputEle.addEventListener('keyup', function (e) {
+        let key = e.which || e.keyCode;
+        if (key == 13) {
+            // se va a buscar por nombre en la API
+            const parametroConsulta = "nombre";
+            const valorBuscar = document.querySelector("[data-busqueda]").value;
+
+            buscarProductos(parametroConsulta, valorBuscar);
+        }
+    });
+    // inputEle.addEventListener('input', evento => {
+    //     evento.preventDefault();
+    //     const parametroConsulta = "nombre";
+    //     const valorBuscar = document.querySelector("[data-busqueda]").value;
+    //     buscarProductos(parametroConsulta, valorBuscar);
+    // });
+}
+
+async function buscarProductos(parametro, valorBuscar) {
+    console.log(valorBuscar);
+    if (valorBuscar !== "todos") {
+        try {
+
+            const response = await fetch(`${BASE_URL}?${parametro}=${valorBuscar}`);
+            const data = await response.json();
+            if (!response.ok) {
+                productContainer.innerHTML = "<h2 class='mensaje-fallo'>No se encontró resultados...</h2>";
+            } else {
+                const totalCount = data.length
+                console.log(totalCount);
+                const totalPages = Math.ceil(totalCount / pageSize);
+                const info = { "buscando": true, parametro, valorBuscar }
+                setupPagination(totalPages, currentPage, info);
+                await renderProductosBuscados(currentPage, pageSize, parametro, valorBuscar);
+            }
+        } catch (error) {
+            console.error("Hubo un error: ", error);
+            productContainer.innerHTML = "<h2 class='mensaje-fallo'>No hay resultados...</h2>";
+        }
+    } else {
+        // document.querySelector(".pages").style.display = "block";
+        await init();
+    }
+}
+
+const renderProductosBuscados = async (page, pageSize, parametro, valorBuscar) => {
+    productContainer.innerHTML = '';
+    try {
+
+        const resultado = await servicesProducts.filtrarCategoria(BASE_URL, page, pageSize, parametro, valorBuscar);
+        console.log(resultado);
+        if (resultado.length > 0) {
+            resultado.forEach(product => {
+                const productCard = createCard(product);
+                productContainer.appendChild(productCard);
+            });
+        } else {
+            productContainer.innerHTML = "<h2 class='mensaje-fallo'>No se encontraron resultados...</h2>";
+        }
+    } catch (error) {
+        console.error("Hubo un error: ", error);
+        productContainer.innerHTML = "<h2 class='mensaje-fallo'>Hubo un error al mostrar los productos...</h2>";
+
+    }
+
+
+
+}
+
 
 export { BASE_URL };

@@ -12,52 +12,57 @@
 </head>
 
 <body>
-    <!-- header -->
+    <div class="container">
+        <div class="content">
+            <!-- header -->
+            <header>
+                <nav class="cabecera">
+                    <ul class="cabecera__opciones">
+                        <li class="cabecera__opcion">
+                            <a class="logo" href="./index.html">
+                                <img class="logo__img" src="./assets/logo.png" alt="Logo de la página">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="cabecera__opcion opcion__agregar"><a class="btn__agregar"
+                                href="./pages/agregar-producto.html">Agregar</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="filtrar">
+                <div class="search-container">
+                    <input type="search" placeholder="Buscar productos..." class="search-input" id="buscar"
+                        data-busqueda>
+                    <button class="search-button" data-boton-busqueda><img class="search__icon"
+                            src="./assets/search.png" alt="" srcset=""></button>
+                </div>
 
-    <header>
-        <nav class="cabecera">
-            <ul class="cabecera__opciones">
-                <li class="cabecera__opcion">
-                    <a class="logo" href="./index.html">
-                        <img class="logo__img" src="./assets/logo.png" alt="Logo de la página">
-                        Inicio
-                    </a>
-                </li>
-                <li class="cabecera__opcion opcion__agregar"><a class="btn__agregar"
-                        href="./pages/agregar-producto.html">Agregar</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="search-container">
-        <input type="search" placeholder="Buscar productos..." class="search-input">
-        <button class="search-button"><img class="search__icon" src="./assets/search.png" alt="" srcset=""></button>
-    </div>
 
-    <div class="category-selector">
-        <label for="categories">Categorías:</label>
-        <select id="categories" class="category-dropdown">
-            <option value="todos">Todos</option>
-            <option value="electronica">Electrónica</option>
-            <option value="ropa">Ropa</option>
-            <option value="hogar">Hogar</option>
-            <option value="juguetes">Juguetes</option>
-        </select>
-    </div>
+                <div class="category-selector">
+                    <label for="categories">Categorías:</label>
+                    <select id="categories" class="category-dropdown" data-categoria>
+                        <option value="todos">Todos</option>
+                        <option value="dc">DC</option>
+                        <option value="marvel">Marvel</option>
+                        <option value="dragon_ball">Dragon Ball</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
 
-    <div class="pages">
-        <span class="pageInfo">Página <strong id="currentPage">1</strong> de <strong id="totalPages">10</strong></span>
-        <div class="pagination" data-pagination>
-            <button id="prevPage" class="pagination-button" onclick="navigateToPage(currentPage - 1)">Anterior</button>
 
-            <button id="nextPage" class="pagination-button" onclick="navigateToPage(currentPage + 1)">Siguiente</button>
-        </div>
-    </div>
+            </div>
+            <div class="pages">
+                <span id="pageInfo"></span>
+                <div class="pagination" data-pagination>
 
-    <main class="product-container" data-product>
-        <!-- Mostrar producto-->
+                </div>
+            </div>
 
-        <!-- <div class="card">
+            <main class="product-container" data-product>
+                <!-- Mostrar producto-->
+
+                <!-- <div class="card">
             <a href="">
                 <div class="image-container">
                     <img src="https://m.media-amazon.com/images/I/71y6Hlm1YCL.jpg" alt="Nombre del Producto"
@@ -75,17 +80,19 @@
                 </div>
             </a> 
         </div>-->
-    </main>
-
-    <footer class="footer">
-        <div class="footer__info">
-            <p class="footer__text">🧡🧡🧡 Alura Geek - Inventario figuras 🧡🧡🧡</p>
-            <p class="footer__text">Desarrollado por Santiago Coral.</p>
-            <p class="footer__text">&copy; 2024</p>
+            </main>
         </div>
 
-    </footer>
+        <footer class="footer">
+            <div class="footer__info">
+                <p class="footer__text">🧡🧡🧡 Alura Geek - Inventario figuras 🧡🧡🧡</p>
+                <p class="footer__text">Desarrollado por Santiago Coral.</p>
+                <p class="footer__text">&copy; 2024</p>
+            </div>
 
+        </footer>
+
+    </div>
     <script src="./js/controllers/main.js" type="module"></script>
 </body>
 

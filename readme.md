@@ -23,7 +23,7 @@
 - **HTML5**: Para la estructura básica de la aplicación.
 - **CSS3**: Para el diseño y estilo visual.
 - **JavaScript**: Para la lógica del cliente y la interacción.
-- **API REST**: Mockapi para la gestión de datos.
+- **API REST**: Mockapi para la gestión de datos. CRUD para la aplicación. Podemos agregar, actualizar, eliminar, listar todos, listar por categorías, detalles individuales y buscar por nombre de producto.
 
 ## 📥 Instalación
 

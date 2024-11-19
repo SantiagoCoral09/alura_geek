@@ -18,11 +18,11 @@ function createCard({ id, nombre, descripcion, precio, url_imagen, categoria }) 
                     <img src="${url_imagen}" alt="${id}: ${nombre}"
                         class="card-image">
                 </div>
-                <div class="card-content">
+                <div class="">
                     <h4 class="card-title">${id}: ${nombre}</h4><hr>
                     <p class="">Categoría: ${categoria}</p><br>
-                    <p class="detalles-description">Descripción: ${descripcion}</p><br>
-                    <p class="card-price">Precio: $${precio}</p>
+                    <p class="">Descripción: ${descripcion}</p><br>
+                    <p class="">Precio: $${precio}</p>
                 </div>
                 <div class="botones">
                     <a href="../pages/modificar.html?id=${id}" class="btn__modificar">Modificar</a>
